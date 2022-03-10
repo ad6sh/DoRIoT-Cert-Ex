@@ -4,9 +4,9 @@
 ## about
 The project is part of [DoRIoT](http://doriot.net/) and contains the source code exchanging certificates between a client and a resource directory(rd).
 
-###folder structure
+### folder structure
 
-**doriot_wot*+ contains 2 modules,one for client(**doriot_wot_cl**) and one for resource directory(**doriot_wot_rd**).
+**doriot_wot** contains 2 modules,one for client(**doriot_wot_cl**) and one for resource directory(**doriot_wot_rd**).
 
 **examples** folder contains example application for client and resouce directory.
 
@@ -15,7 +15,6 @@ The project is still in its early phase, and several optimizations need to be do
 the key exchange happens as per the sequence diagram below.
 
 ![sequence diagram](sequence_diagram_key_exchange.jpg)
-
 
 Applications can be tested with two native instances of riot,and communicating via tap interface. 
 
