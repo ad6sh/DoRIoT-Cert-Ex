@@ -1,7 +1,7 @@
 
-#**certificate exchange**
+# **certificate exchange**
 
-##about
+## about
 
 This project contains the source code exchanging certificates between a client and a resource directory
 
@@ -18,7 +18,7 @@ the key exchange happens as per the sequence diagram below.
 
 Applications can be tested with two native instances of riot,and communicating via tap interface 
 
-#Usage
+# Usage
 
 - Create two tap interfaces by "./dist/tools/tapsetup/tapsetup --create 2"
 
@@ -38,7 +38,7 @@ Applications can be tested with two native instances of riot,and communicating v
 
 
 
-#issues
+# issues
 
 - after exchanging the certificates,"ifconfig" command shows the name of stored in last field,but the implementation of "ifconfig" is not touched in the modules.
 
@@ -46,7 +46,7 @@ Applications can be tested with two native instances of riot,and communicating v
 
 - when list implemntation is tested seperattely,if does affect the ifconfig command 
 
-#path to wot_list.c
+# path to wot_list.c
 
 - both client and rd uses list to store peers certificates.
 
