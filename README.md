@@ -1,13 +1,14 @@
 
-# **certificate exchange**
+# **certificate exchange between client and resource directory via CoAP over DTLS**
 
 ## about
+The project is part of [DoRIoT](http://doriot.net/) and contains the source code exchanging certificates between a client and a resource directory(rd).
 
-This project contains the source code exchanging certificates between a client and a resource directory
+###folder structure
 
-doriot_wot contains 2 modules,one for client and one for resource directory(rd)
+**doriot_wot*+ contains 2 modules,one for client(**doriot_wot_cl**) and one for resource directory(**doriot_wot_rd**).
 
-examples folder contains example application for client and resouce directory
+**examples** folder contains example application for client and resouce directory.
 
 The project is still in its early phase, and several optimizations need to be done. 
 
@@ -16,13 +17,13 @@ the key exchange happens as per the sequence diagram below.
 ![sequence diagram](sequence_diagram_key_exchange.jpg)
 
 
-Applications can be tested with two native instances of riot,and communicating via tap interface 
+Applications can be tested with two native instances of riot,and communicating via tap interface. 
 
 ## Usage
 
 - Create two tap interfaces by "./dist/tools/tapsetup/tapsetup --create 2"
 
-- set RIOTBASE properly in makefile and build client and rd applications in examples
+- set **RIOTBASE** properly in makefile and build client and rd applications in examples
 
 - enter "help" to see the availbe commands
 
@@ -40,7 +41,7 @@ Applications can be tested with two native instances of riot,and communicating v
 
 ## issues
 
-- after exchanging the certificates,"ifconfig" command shows the name of stored in last field,but the implementation of "ifconfig" is not touched in the modules.
+- after exchanging the certificates,"ifconfig" command shows the name of stored in last field,but the implementation of "ifconfig" is not interfered in the modules.
 
 - list implentation can be found in wot_list.c and header is in wot_list.h
 
