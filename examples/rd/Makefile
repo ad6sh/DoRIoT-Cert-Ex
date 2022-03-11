@@ -1,6 +1,6 @@
 APPLICATION = wot_cert_exchange_rd
 
-RIOTBASE ?= $(CURDIR)/../../../../..
+RIOTBASE ?= $(CURDIR)/../../../../RIOT
 
 USEMODULE += doriot_wot_rd
 #EXTERNAL_MODULE_DIRS += doriot_wot
